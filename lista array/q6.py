@@ -4,14 +4,14 @@
 # correspondentes da string nos mesmos índices. Exiba a sequência 
 # resultante, separada por um espaço em branco. Exemplo:
 
-numeros = 1, 2, 3, 4, 5, 6
-letras = 'abcdef'
-novoArray = []
+numeros = [1, 2, 3, 4, 5, 6]
+letras = ['a', 'b', 'c', 'd', 'e','f']
+saida = ''
 
-for x in range(0, len(numeros)):
+for x in range(len(numeros)):
     if x % 2 == 0:
-        novoArray.append(numeros[x])
+        saida += str(numeros[x]) + ' '
     else:
-        novoArray.append(letras[x])
+        saida += str(letras[x]) + ' '
 
-print(novoArray)
+print(saida)
