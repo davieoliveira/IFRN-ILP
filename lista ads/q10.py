@@ -5,4 +5,17 @@
 # (20 + 50 -1 + 3 = 72) Maior soma possivel.
 
 a = [10, 5, -17, 20, 50, -1, 3, -30, 10]
+maior_soma = 0
 
+for x in range(0, len(a)):
+    for y in range(x, len(a)):
+        somas = 0
+        
+        if x != y:
+            somas = a[x] + a[y]
+        
+        if maior_soma < somas:
+            maior_soma = somas
+            somas = 0
+
+print(maior_soma)
