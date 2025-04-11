@@ -2,8 +2,8 @@
 # pares de elementos em A cuja soma seja s existem.
 # O algoritmo deve retornar um valor inteiro, a quantidade de pares cuja soma seja s
 
-numero_alvo = 10
-array_a = [1,2,3,4,5,6,7,8,9,10]
+numero_alvo = 12
+array_a = [4, 7, 11, 8, 1, 3]
 pares_encontrados = []
 quantidade_pares = 0
 
