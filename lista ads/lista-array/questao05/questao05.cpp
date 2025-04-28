@@ -4,7 +4,6 @@
 #include <iostream>
 #include <cmath>
 
-// Função para verificar se um número é primo
 bool eh_primo(int num) {
     if (num <= 1) return false;
     if (num == 2) return true;
@@ -16,7 +15,6 @@ bool eh_primo(int num) {
     return true;
 }
 
-// Função que conta os primos e os coloca em outro array
 void conta_primos(int a[], int n, int primos[], int& qtd_primos) {
     qtd_primos = 0;
     for (int i = 0; i < n; ++i) {
@@ -32,7 +30,7 @@ int main() {
     std::cout << "Digite o tamanho do array: ";
     std::cin >> n;
     
-    int a[n], primos[n]; // O array de primos pode ter no máximo n elementos
+    int a[n], primos[n]; 
     
     std::cout << "Digite os elementos do array:\n";
     for (int i = 0; i < n; ++i) {
